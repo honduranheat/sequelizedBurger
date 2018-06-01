@@ -1,0 +1,60 @@
+body {
+    background-color: gold;
+}
+
+.jumbotron {
+    background: #1b222a url(../images/hamburgerbacking2.jpg) top center;
+   background-color: gold;
+    height: 200px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.titleText {
+    font-family: 'Permanent Marker', cursive;
+    color: black !important;
+    text-align: center;
+    font-size: 85px;
+    text-decoration-line: overline underline;
+    text-decoration-style: wavy;
+}
+
+.columnText {
+    font-family: 'Permanent Marker', cursive;
+    color: black !important;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+#burgers {
+    margin-top: -33px;
+    padding-left: 75px;
+    background-color: gold;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+#top {
+    background-color: black !important;
+}
+
+.addBurgerButton {
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+.burgerAvailable {
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+.eaten {
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    text-align: center;
+}

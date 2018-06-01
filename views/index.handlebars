@@ -1,0 +1,35 @@
+<div class="row" id="burgers" class="col-3 col-md-3 col-sm-12">
+  <div class="col-3 col-md-3 col-sm-12" id="addburger">
+    <h2 class="columnText">Order Up!</h2>
+    <br>
+    <form action="/burgers" method="POST">
+      <input type="text" id="name" name="burger_name" placeholder="Burger">
+      <button type="submit" class="addBurgerButton">Add Da Burger</button>
+    </form>
+  </div>
+  <div id="burgernoteaten" class="col-4 col-md-4  col-sm-6">
+    <h2 class="columnText">Time To Eat!</h2>
+    <div class="col-12 col-md-12 col-sm-6">
+      <ul class="noteaten">
+        {{#each burgers}} {{#unless this.devoured}}
+        <li class="list-group-item">
+          <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+            <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
+          </form>
+        </li>
+        {{/unless}} {{/each}}
+      </ul>
+    </div>
+  </div>`
+  <div id="burgereaten" class="col-4 col-md-4  col-sm-6">
+    <h2 class="columnText">R.I.P.</h2>
+    <div class="col-12 col-md-12 col-sm-6">
+      <ul class="eaten">
+        {{#each burgers}} {{#if this.devoured}}
+        <li class="list-group-item">
+          {{this.burger_name}} {{/if}} {{/each}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
